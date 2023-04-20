@@ -17,7 +17,9 @@
 
     <div class="container">
       <ul class="list-group">
-        <li v-for="item in todoList" class="list-group-item">{{item.text}}</li>
+        <li v-for="(item,index) in todoList" class="list-group-item">
+          <span :class="item.done==true?'text-decoration-line-through':''" @click="trueOrFalse(index)">{{item.text}}</span>
+        </li>
       </ul>
     </div>
     
