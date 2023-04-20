@@ -13,7 +13,15 @@
 </head>
 
 <body>
-  <div id="app">{{ message }}</div>
+  <div id="app">
+
+    <div class="container">
+      <ul class="list-group">
+        <li v-for="item in todoList" class="list-group-item">{{item.text}}</li>
+      </ul>
+    </div>
+    
+  </div>
 
   <!-- vue -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
