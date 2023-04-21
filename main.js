@@ -15,7 +15,19 @@ createApp({
       });
     },
     trueOrFalse(index) {
-      this.todoList[index].done = !this.todoList[index].done;
+      //this.todoList[index].done = !this.todoList[index].done;
+
+      const data = true;
+
+      axios
+        .post("server.php", data, {
+          headers: { "Content-Type": "multipart/form-data" },
+        })
+        .then((response) => {
+          this.todoList[index] = response.data;
+
+          console.log(data);
+        });
     },
     addItem() {
       if (this.todoItem != "") {

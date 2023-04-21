@@ -1,1 +1,6 @@
-[{"text":"ciao","done":"false"},{"text":"ciao","done":"false"},{"text":"hello","done":"false"},{"text":"sticavoli","done":"false"},{"text":"ciao","done":"false"},{"text":"ewe","done":"false"}]
+[
+  { "text": "ciao", "done": "false" },
+  { "text": "ciao", "done": "false" },
+  { "text": "hello", "done": "false" },
+  { "text": "sticavoli", "done": "false" }
+]

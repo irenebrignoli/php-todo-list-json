@@ -40,5 +40,3 @@ header("Content-type:application/json");
 
 echo json_encode($todoList);
 
-
-//class="item.done==true?'text-decoration-line-through':''"

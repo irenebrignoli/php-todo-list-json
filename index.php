@@ -27,8 +27,7 @@
           </h1>
           <ul class="list-group">
             <li v-for="(item,index) in todoList" class="list-group-item">
-              <span class="<?php if($item['done'] = true)
-                echo 'text-decoration-line-through'; else echo '';?>"
+              <span :class="item.done==true?'text-decoration-line-through':''"
                 @click="trueOrFalse(index)"
                 >{{item.text}}</span
               >
