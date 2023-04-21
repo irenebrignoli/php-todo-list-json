@@ -31,6 +31,7 @@ if(file_exists('database.json')){
 if (isset($_POST['item'])) {
   $todoList[] = $_POST['item'];
 
+
   $newString = json_encode($todoList);
   file_put_contents('database.json', $newString);
 }
